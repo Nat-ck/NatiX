@@ -1,0 +1,134 @@
+ body{
+   font-family:Arial, Helvetica, sans-serif;
+   background-color: rgb(30, 12, 80);
+   color: #e6e0e0;
+   margin:0;
+   padding:90;
+ }
+
+ header{
+   background-color:#004080;
+   color:white;
+   padding: 20px;
+   margin:0px;
+   font-size:20px;
+   display: flex;
+   align-items: center;
+   justify-content: left;
+ }
+
+ .logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: cursive;
+ }
+
+ .sidebar{
+  width: 20%;
+ }
+
+                  /*navigation*/
+
+
+ nav{
+   margin: 50px;
+   padding: 20px;
+ }
+ 
+ .nav-content{
+   margin: 50px;
+   color:rgb(214, 220, 226);   
+ }
+
+ nav ul{
+       display:flex;
+       align-items:center;
+       justify-content:center;
+ }
+
+
+ nav ul li{
+   list-style-type: none;
+   margin:10px;
+   padding: 0px;
+  
+   
+ }
+nav ul li a:hover{
+  color:aqua;
+}
+
+
+                  /*main body*/
+
+
+.betting-section{
+  max-width: 10000px;
+  display: flex;
+  margin-right:2000 auto;
+  padding-left : 200px;
+  text-align: center;
+  border-radius:111px;
+  box-shadow: 0 0 10px rgba(0,0,0.1); 
+}
+ 
+
+label{
+  display:block;
+  margin-top:15px;
+}
+
+
+input,select,button{
+  background-color: #0073e6;
+  color:white;
+  border:none;
+  cursor:pointer;
+  margin-top:20px;
+  font-size:16px;
+  border-radius:4px;
+}
+
+button:hover{
+  background-color: aqua;
+}
+.match  {
+  background:  #004080;
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0.01);
+}
+.match {
+  background: #004080;
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0.01);
+}
+.match h2{
+  margin-bottom: 10px;
+}
+
+.bookmaker{
+  padding-left: 10px;
+  border-left:2px solid #ccc;
+}
+p{
+  display:flex
+}
+ 
+                  /*footer*/
+
+
+
+footer{
+  margin:10%;
+  padding-left:25%;
+  text-align:center;
+  display:flex;
+ }
+
