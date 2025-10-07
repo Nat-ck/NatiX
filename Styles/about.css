@@ -59,11 +59,35 @@ body{
 nav ul li a:hover{
   color:aqua;
 }
+     
+                /*main body*/
 main {
     display:flex;
+    
 }
+
+section{
+  margin: 100px;
+  padding:10px;
+  display: flex;
+  text-align: center;
+}
+ 
+
+p{
+  display:flex;
+}
+
+.left-image {
+      float: left;           
+      margin-right: 10px;     
+      width: 200px;           
+    }
+ 
 footer{
-  margin:10%;
-  padding:0%;
+  margin:0%;
+  padding-left:40%;
   text-align:center;
+  display:flex;
+  background-color: #051424;
  }

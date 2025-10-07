@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial=scale 1.0" />
+    <title>NatiX</title>
+    <link href="../Styles/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+    <style>
+        .slide-container {
+            margin: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+        }
+
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+
+            overflow: hidden;
+        }
+
+        .slides {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .active {
+            display: block;
+        }
+
+        /* Arrows */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.7);
+            color: #000;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 50%;
+            user-select: none;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-context">
+            <img class="logo" src="../images/logo.jpg" alt="NatiX logo" class="logo" />
+            <h1><i>NatiX</i></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"> Main </a></li>
+                <li><a href="./about.html"> About </a></li>
+                <li><a href="./contact.html">Contact<a></li>
+                <li><a href="./sign_up.html">Sign Up</a></li>
+                <li><a href="./log_in.html">Log in</a></li>
+            </ul>
+            <div></div>
+        </nav>
+        <div class="top-bar">
+            <label for="Language" class="top-label">
+                <i class="fas fa-globe" ></i>
+            </label>
+
+            <select class="primary-btn" id="Language">
+                <option value="en">English</option>
+                <option value="Am">Amharic</option>
+
+            </select>
+
+        </div>
+        <div></div>
+
+    </header>
+
+
+    <section class="slide-container">
+
+        <div class="slideshow-container">
+
+            <div class="slides active">
+                <img src="../images/Betting.jewlery.img" alt="Slide 1">
+            </div>
+
+            <div class="slides">
+                <img src="../images/Casino-img.webp" alt="Slide 2">
+            </div>
+
+            <div class="slides">
+                <img src="../images/Dollar-img.webp" alt="Slide 3">
+            </div>
+
+            <span class="prev" onclick="plusSlides(-1)">❮</span>
+            <span class="next" onclick="plusSlides(1)">❯</span>
+        </div>
+    </section>
+    <main>
+        <main class="main-body">
+            <!-- Aside on the left -->
+            <aside class="sidebar">
+                <h2>Quick Menu</h2>
+                <ul>
+                    <li><a href="#">My Bets</a></li>
+                    <li><a href="#">Live Scores</a></li>
+                    <li><a href="#">Top Leagues</a></li>
+                </ul>
+
+                <h2>Latest News</h2>
+                <p>Manchester City signs new striker ahead of derby...</p>
+                <p>Champions League draw announced today!</p>
+                <p>A-League Yellow Card Betting Scheme (Australia)
+                    Two players (Kearyn Baccus and Clayton Lewis) in Australia’s A-League pleaded guilty to being paid
+                    to receive yellow cards in matches, in a scheme orchestrated by a former captain, Ulises Davila, in
+                    collusion with a criminal group.
+                    AP News</p>
+                <p>Betting / Crypto Sponsorship Scrutiny in European Football
+                    A report by Play the Game highlights how deeply betting and crypto sponsorships are embedded in top
+                    European football leagues (Premier League, Serie A, etc.), raising questions about influence,
+                    integrity, and regulation.
+                    IGamingExpert</p>
+                <h2>Information</h2>
+                <ul class="info-list">
+                    <li>✔ Responsible betting is advised – 18+ only</li>
+                    <li>✔ Odds are updated regularly but may change</li>
+                    <li>✔ Check your bet slip carefully before confirming</li>
+                    <li>✔ We do not accept real money bets – info only</li>
+                    <li>✔ Contact support for any assistance</li>
+                </ul>
+            </aside>
+
+
+            <div>
+                <h1> Live Odds </h1><br>
+                <!-- match information display component -->
+
+                <!-- match list -->
+                <div class="match-list">
+                    <!-- the first match -->
+                    <section class="match-short">
+                        <div class="match-content">
+
+                            <div class="match-info">
+                                <h5> Priemer league</h5>
+                                <h5>15 Aug 21:45</h5>
+                            </div>
+                            <div class="match-club">
+                                <div class="club-info">
+                                    <img src="../images/Manutd-logo.jpg" alt="Club img" class="club-logo" />
+                                    <h5> Manchester utd</h5>
+
+                                </div>
+                                <div class="club-info">
+
+                                    <h4> VS</h4>
+
+                                </div>
+                                <div class="club-info">
+                                    <img src="../images/Chelsea-logo.jpg" alt="Club img" class="club-logo" />
+                                    <h5>Chelsea</h5>
+
+                                </div>
+                            </div>
+                            <div class="match-result">
+                                <h4> ----------- Match Result -----------</h4>
+                            </div>
+                            <div class="match-bet">
+                                <div class="bet-info">
+                                    <div class="bet">
+                                        <h4>
+                                            1
+                                        </h4>
+                                        <h4 style="color: gold;">
+                                            3.75
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="bet-info">
+                                    <div class="bet">
+                                        <h4>
+                                            1
+                                        </h4>
+                                        <h4 style="color: gold;">
+                                            3.75
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="bet-info">
+                                    <div class="bet">
+                                        <h4>
+                                            1
+                                        </h4>
+                                        <h4 style="color: gold;">
+                                            3.75
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- the second match -->
+                    <section class="match-short">
+                        <div class="match-content">
+
+                            <div class="match-info">
+                                <h5> Priemer league</h5>
+                                <h5>15 Aug 21:45</h5>
+                            </div>
+                            <div class="match-club">
+                                <div class="club-info">
+                                    <img src="../images/Manutd-logo.jpg" alt="Club img" class="club-logo" />
+                                    <h5> Manchester utd</h5>
+
+                                </div>
+                                <div class="club-info">
+
+                                    <h4> VS</h4>
+
+                                </div>
+                                <div class="club-info">
+                                    <img src="../images/Chelsea-logo.jpg" alt="Club img" class="club-logo" />
+                                    <h5>Chelsea</h5>
+
+                                </div>
+                            </div>
+                            <div class="match-result">
+                                <h4> ----------- Match Result -----------</h4>
+                            </div>
+                            <div class="match-bet">
+                                <div class="bet-info">
+                                    <div class="bet">
+                                        <h4>
+                                            1
+                                        </h4>
+                                        <h4 style="color: gold;">
+                                            3.75
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="bet-info">
+                                    <div class="bet">
+                                        <h4>
+                                            1
+                                        </h4>
+                                        <h4 style="color: gold;">
+                                            3.75
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="bet-info">
+                                    <div class="bet">
+                                        <h4>
+                                            1
+                                        </h4>
+                                        <h4 style="color: gold;">
+                                            3.75
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- the third match -->
+                    <section class="match-short">
+                        <div class="match-content">
+
+                            <div class="match-info">
+                                <h5> Priemer league</h5>
+                                <h5>15 Aug 21:45</h5>
+                            </div>
+                            <div class="match-club">
+                                <div class="club-info">
+                                    <img src="../images/Manutd-logo.jpg" alt="Club img" class="club-logo" />
+                                    <h5> Manchester utd</h5>
+
+                                </div>
+                                <div class="club-info">
+
+                                    <h4> VS</h4>
+
+                                </div>
+                                <div class="club-info">
+                                    <img src="../images/Chelsea-logo.jpg" alt="Club img" class="club-logo" />
+                                    <h5>Chelsea</h5>
+
+                                </div>
+                            </div>
+                            <div class="match-result">
+                                <h4> ----------- Match Result -----------</h4>
+                            </div>
+                            <div class="match-bet">
+                                <div class="bet-info">
+                                    <div class="bet">
+                                        <h4>
+                                            1
+                                        </h4>
+                                        <h4 style="color: gold;">
+                                            3.75
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="bet-info">
+                                    <div class="bet">
+                                        <h4>
+                                            1
+                                        </h4>
+                                        <h4 style="color: gold;">
+                                            3.75
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="bet-info">
+                                    <div class="bet">
+                                        <h4>
+                                            1
+                                        </h4>
+                                        <h4 style="color: gold;">
+                                            3.75
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+
+                <!--Another match display-->
+
+                <div class="match">
+                    <h2>Chelsea vs Arsenal</h2>
+                    <div class="bookmaker">
+                        <p>Chelsea: <strong>2.50</strong></p>
+                        <p>Draw:<strong>3.10</strong></p>
+                        <p>Arsenal:<strong>2.90</strong></p>
+                    </div>
+                </div><br>
+
+
+                <table class="odds-table">
+                    <thead>
+                        <tr>
+                            <th>Match</th>
+                            <th> 1 </th>
+                            <th> X</th>
+                            <th> 2 </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="../images/Manutd-logo.jpg" alt="Man utd" class="team-logo">
+                                Manchester Utd
+                                <span class="vs">VS</span>
+                                <img src="../images/liverpool-logo.jpg" alt="Liverpool" class="team-logo">
+                                Liverpool
+                            </td>
+                            <td>1.80</td>
+                            <td>1.85</td>
+                            <td>1.78</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/Arsenal-logo.jpg" alt="Arsenal" class="team-logo">
+                                Arsenal
+                                <span class="vs">VS</span>
+                                <img src="../images/Chelsea-logo.jpg" alt="Chelsea" class="team-logo">
+                                Chelsea
+                            </td>
+                            <td>2.10</td>
+                            <td>2.05</td>
+                            <td>2.08</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/RealMadrid-logo.jpg" alt="Real Madrid" class="team-logo">
+                                Real Madrid
+                                <span class="vs">VS</span>
+                                <img src="../images/Arsenal-logo.jpg" alt="Arsenal" class="team-logo">
+                                vs Arsenal
+                            </td>
+                            <td>1.95</td>
+                            <td>2.01</td>
+                            <td>3.92</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/Chelsea-logo.jpg" alt="Real Madrid" class="team-logo">
+                                Chelsea
+                                <span class="vs">VS</span>
+                                <img src="../images/Barcelona-logo.jpg" alt="Barcelona" class="team-logo">
+                                vs Barcelona
+                            </td>
+                            <td>2.00</td>
+                            <td>1.90</td>
+                            <td>3.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/RealMadrid-logo.jpg" alt="Real Madrid" class="team-logo">
+                                Real Madrid
+                                <span class="vs">VS</span>
+                                <img src="../images/Manutd-logo.jpg" alt=" Man Utd" class="team-logo">
+                                vs Man Utd
+                            </td>
+                            <td>1.95</td>
+                            <td>1.90</td>
+                            <td>1.92</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../images/RealMadrid-logo.jpg" alt="Real Madrid" class="team-logo">
+                                Real Madrid
+                                <span class="vs">VS</span>
+                                <img src="../images/Barcelona-logo.jpg" alt="Barcelona" class="team-logo">
+                                vs Barcelona
+                            </td>
+                            <td>1.95</td>
+                            <td>1.90</td>
+                            <td>1.92</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Place bet section-->
+                <section class="betting-section">
+                    <h2>Place Bet </h2>
+                    <div class id="betForm">
+
+                        <label for="games">Choose a game</label>
+                        <select id="game" name="game" required>
+                            <option value="#">Select</option>
+                            <option value="football"> Football</option>
+                            <option value="basketball">Basketball</option>
+                            <option value="tennis">Tennis</option>
+                            <select>
+                    </div><br>
+                    <div class="amount">
+                        <label for="amount">Bet Amount ($):</label>
+                        <input type="number" id="amount" name="amount" min="1" required />
+                        <button type="submit">Place bet</button>
+                    </div>
+                    <br>
+
+
+                    <div id="result"></div>
+                </section><br>
+
+            </div>
+
+            </div>
+
+
+            
+        </main>
+
+        <!--Footer Section-->
+        <footer>
+            <p> &copy; 2025 Betsmart . All rights reserved</p>
+        </footer>
+        <script>
+            let slideIndex = 0;
+            let slideTimer;
+
+            // Show slides function
+            function showSlides(n) {
+                let slides = document.getElementsByClassName("slides");
+
+                if (n >= slides.length) { slideIndex = 0 }
+                if (n < 0) { slideIndex = slides.length - 1 }
+
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].classList.remove("active");
+                }
+
+                slides[slideIndex].classList.add("active");
+            }
+
+            // Manual controls
+            function plusSlides(n) {
+                slideIndex += n;
+                showSlides(slideIndex);
+                resetTimer();
+            }
+
+            // Auto slide
+            function autoSlides() {
+                slideIndex++;
+                showSlides(slideIndex);
+            }
+
+            // Reset timer if user clicks arrows
+            function resetTimer() {
+                clearInterval(slideTimer);
+                slideTimer = setInterval(autoSlides, 4000); // 4s interval
+            }
+
+            // Initialize
+            showSlides(slideIndex);
+            slideTimer = setInterval(autoSlides, 4000);
+        </script>
+</body>
+
+</html>

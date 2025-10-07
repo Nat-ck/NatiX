@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, intial=scale 1.0" />
+   <title>NatiX</title>
+   <link href="../Styles/sign_in.css" rel="stylesheet" />
+</head>
+
+<body>
+    
+  <div class="login-container">
+    <h2>Create Account</h2>
+    <form action="../php/sign_up.php" method="POST">
+      <label for="Full_Name">Full Name</label>
+      <input type="text" id="Full_Name" name="Full_Name" placeholder="Enter your full name" required>
+
+      <label for="Username">Username</label>
+      <input type="text" id="Username" name="Username" placeholder="Choose a username" required>
+
+      <label for="Email">Email</label>
+      <input type="email" id="Email" name="Email" placeholder="Enter your email" required>
+
+      <label for="Password">Password</label>
+      <input type="password" id="Password" name="Password" placeholder="Create a password" required>
+
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your password" required>
+
+      <button type="submit">Sign Up</button>
+
+      <p class="signup-link">Already have an account? <a href="log_in.html">Log in</a></p>
+    </form>
+  </div>
+
+</body>
+</html>
