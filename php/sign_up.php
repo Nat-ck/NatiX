@@ -15,7 +15,7 @@ if($Full_Name){
    $stmt->bind_param('sssss',$Full_Name, $User_Name, $Email, $Password, $Confirm_Password );
    $stmt->execute();
 
-   header('Location: ../templates/index.html');
+   header('Location: ./index.html');
 
 }
 ?>
