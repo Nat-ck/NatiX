@@ -2,15 +2,15 @@ body{
    font-family:Arial, Helvetica, sans-serif;
    background-color: rgb(30, 12, 80);
    color: #e6e0e0;
-   margin:0;
-   padding:90;
+   margin:100;
+   padding:10;
  }
 
  header{
    background-color:#004080;
    color:white;
    padding: 20px;
-   margin:0px;
+   margin:50px;
    font-size:20px;
    display: flex;
    align-items: center;
@@ -34,7 +34,8 @@ body{
  nav{
    display:flex;
    justify-content: center;
-   margin-bottom: 30px;
+   margin-bottom: 80px;
+   padding: 50px;
    background-color:  #004080;
    text-align: center;
    display: flex;
@@ -49,17 +50,20 @@ body{
        display:flex;
        align-items:center;
        justify-content:center;
-       color:#c13584
+       color:#e0d7dd
 
  }
 
 
  nav ul li{
-   list-style-type: none;
-   margin:70px;
-   padding: 0px;
-  
-   
+   list-style-type: georgian;
+   margin:100px;
+   padding: 0px;  
+ }
+
+ nav ul li a {
+  color:rgb(237, 235, 243);
+  margin: 40px;
  }
 nav ul li a:hover{
   color:aqua;
@@ -71,33 +75,7 @@ main{
   
 }
 
-                /*log in container*/
-.login-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #007bff;
-}
-
-/* Form inputs */
-.login-container label {
-  font-size: 14px;
-  margin-bottom: 5px;
-  display: block;
-  color: #333;
-}
-
-.login-container input {
-  width: 20%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  outline: none;
-}
-
-.login-container input:focus {
-  border-color: #007bff;
-}
+ 
 
                           /* Button */
 .login-container button {
