@@ -41,7 +41,7 @@ body{
  }
  
  .nav-content{
-   margin: 80px;
+   margin: 100px;
    color:rgb(237, 235, 243);   
  }
 
@@ -74,49 +74,8 @@ main{
   
 }
 
-                /*log in container*/
-.login-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #007bff;
-}
-
-/* Form inputs */
-.login-container label {
-  font-size: 14px;
-  margin-bottom: 5px;
-  display: block;
-  color: #333;
-}
-
-.login-container input {
-  width: 20%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  outline: none;
-}
-
-.login-container input:focus {
-  border-color: #007bff;
-}
-
-                          /* Button */
-.login-container button {
-  width: 50%;
-  padding: 30px;
-  background: #007bff;
-  border: none;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.login-container button:hover {
-  background: #0056b3;
-}
+ 
+ 
 
                            /* Sign up link */
 .signup-link {
