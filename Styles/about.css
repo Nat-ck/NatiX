@@ -33,27 +33,29 @@ body{
  
  nav{
    margin: 80px;
-   padding: 20px;
+   padding: 0px;
    text-align: center;
  }
  
  .nav-content{
-   margin: 50px;
+   margin: 15px;
    color:rgb(4, 10, 15);   
  }
 
- nav ul{  
+ nav ul{
+       margin: 30px; 
+       padding:49 ; 
        display:flex;
        align-items:center;
        justify-content:center;
  }
 
 
- nav ul li{
+  nav ul li{
    list-style-type: none;
-   margin:10px;
-   padding:0px;
- }
+   margin:50px;
+   padding: 20px;
+}
 
  nav ul li a{
   text-decoration: none;
