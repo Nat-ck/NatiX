@@ -161,7 +161,13 @@ div {
     color:#e2e4e7;
 }
 .social-links.youtube{
+  padding: 5px;
     color:#c13584
+}
+
+.social-links a i{
+  text-decoration: none;
+  color: #e6e0e0;
 }
 .social-links a:hover{
     opacity:0.8;

@@ -32,7 +32,7 @@ body{
 
  
  nav{
-   margin: 50px;
+   margin: 80px;
    padding: 20px;
    text-align: center;
  }
@@ -52,7 +52,7 @@ body{
  nav ul li{
    list-style-type: none;
    margin:10px;
-   padding: 0px;
+   padding:0px;
  }
 
  nav ul li a{
